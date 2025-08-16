@@ -21,23 +21,23 @@ from typing import Dict, List, Any
 from unittest.mock import Mock
 
 # Import all MoE components
-from movement_experts import (
+from EFE_update import (
     FlipExpert, RotationExpert, TranslationExpert, ColorTransformExpert,
     MovementValidator, MovementResult, MovementType
 )
-from moe_router import (
+from EFE_update import (
     MovementMoERouter, create_default_moe_router, RoutingStrategy, 
     GridAnalyzer, ExpertSelector, ExpertCombiner
 )
-from movement_language import (
+from EFE_update import (
     MovementScript, MovementCompiler, MovementScriptBuilder,
     MovementOperator, MovementCondition, create_flip_script
 )
-from enhanced_solvers_moe import (
+from EFE_update import (
     EnhancedColorPatternSolver, EnhancedShapeSymmetrySolver,
     EnhancedGeometricTransformSolver, EnhancedLogicalRuleSolver, EnhancedSymbolicSolver
 )
-from enhanced_arc_ensemble_moe import create_enhanced_arc_system
+from EFE_update import create_enhanced_arc_system
 
 class TestMovementExperts:
     """Test suite for movement experts"""
@@ -589,7 +589,7 @@ class TestEnsembleIntegration:
         movement_trace = [mock_movement]
         
         # Create mock state
-        from arc_efe_solver import ARCState
+        from EFE_update import ARCState
         mock_state = ARCState(
             grid=self.test_problem['input'],
             constraints=self.test_problem['constraints'],

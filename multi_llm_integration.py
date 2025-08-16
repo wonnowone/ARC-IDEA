@@ -31,7 +31,7 @@ from multi_llm_wrapper import (
     KananaSolver, MultiLLMEnsemble, LLMModelType,
     create_gpt_oss_solver, create_kanana_solver, create_multi_llm_ensemble
 )
-from arc_gpt_oss_integration import HybridSolverEnsemble, LLMEnhancedConsensus
+# from arc_gpt_oss_integration import HybridSolverEnsemble, LLMEnhancedConsensus
 
 @dataclass
 class MultiLLMResult:
