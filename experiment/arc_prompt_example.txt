@@ -1,0 +1,66 @@
+
+# Example Application: Pattern Completion Challenge
+
+## Phase 1: Problem Objective Definition
+
+### Input-Output Analysis:
+Input: 3x3 grid with partial blue line
+Output: 3x3 grid with completed blue line
+
+### Objective Statement:
+"The goal is to complete broken or partial lines of the same color to form continuous straight lines."
+
+### Self-Critique:
+- Consistent across examples?  All examples show line completion
+- Captures essential transformation?  Focus is on line continuity
+- Edge cases considered? Need to check diagonal lines and corners
+
+## Phase 2: Forward Chain-of-Thought Planning
+
+### Grid Analysis Example:
+Input:  [0,1,0]
+        [0,0,0]  
+        [0,1,0]
+
+Output: [0,1,0]
+        [0,1,0]
+        [0,1,0]
+
+### Transformation Steps:
+1. **Pixel (1,1)**: 0 � 1
+   - **Why**: Creates vertical line continuity
+   - **What**: Fills gap between existing blue pixels
+   - **How**: Completes the vertical line pattern
+   - **Consistency**: Matches line completion objective
+
+### Rule Formalization:
+- **Condition**: When pixels of same color are aligned with a gap
+- **Action**: Fill the gap with the same color
+- **Scope**: Direct line connections (horizontal, vertical, diagonal)
+- **Constraints**: Only fill single-pixel gaps
+
+## Phase 3: Reverse Thinking Validation
+
+### Output-to-Input Reasoning:
+Starting with completed line [0,1,0; 0,1,0; 0,1,0]:
+- To create input, remove middle pixel: [0,1,0; 0,0,0; 0,1,0]
+- This creates a gap that needs completion
+- Reverse rule: "Identify incomplete lines and their missing segments"
+
+### Validation:
+- **Necessity**: Middle pixel necessary for line completion 
+- **Sufficiency**: This step alone completes the pattern 
+- **Consistency**: Forward and backward reasoning align 
+
+## Phase 4: Self-Critique and Refinement
+
+### Quality Assessment:
+- **Logical**: Line completion is logical 
+- **Complete**: All changes explained 
+- **Simple**: Straightforward line completion rule 
+- **Generalizable**: Should work for other line patterns 
+
+## Phase 5: Final Application
+
+### Test Input Application:
+Apply line completion rule to test input systematically, checking each potential gap against the learned pattern.

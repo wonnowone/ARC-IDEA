@@ -1,0 +1,50 @@
+COMPREHENSIVE RATIO STATISTICS ANALYSIS
+================================================================================
+
+OVERVIEW:
+Total Problems Analyzed: 1000
+Problems with Background (>1.5 ratio): 549
+Problems with No Background (≤1.5 ratio): 451
+No-Background Percentage: 45.1%
+
+BACKGROUND PROBLEMS (Dominant Color > 1.5x Second Most Common)
+----------------------------------------------------------------------
+
+Input Ratios (1675 samples):
+  Mean:   20.505
+  Median: 7.900
+  Std:    36.257
+  Range:  0.000 - 295.000
+
+Output Ratios (1675 samples):
+  Mean:   9.346
+  Median: 6.111
+  Std:    11.595
+  Range:  0.000 - 127.000
+
+Test Ratios (585 samples):
+  Mean:   21.947
+  Median: 7.704
+  Std:    41.799
+  Range:  0.000 - 295.000
+
+NO-BACKGROUND PROBLEMS (Dominant Color ≤ 1.5x Second Most Common)
+----------------------------------------------------------------------
+
+Input Ratios (1557 samples):
+  Mean:   6.228
+  Median: 2.000
+  Std:    18.305
+  Range:  0.000 - 476.000
+
+Output Ratios (1557 samples):
+  Mean:   2.233
+  Median: 1.500
+  Std:    2.835
+  Range:  0.000 - 59.000
+
+Test Ratios (491 samples):
+  Mean:   7.162
+  Median: 2.000
+  Std:    20.894
+  Range:  0.000 - 260.333
